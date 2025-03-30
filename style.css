@@ -3,8 +3,11 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: white;
+    background-color: #ACDDE7;
+    ;
+
+ /*Deep Teal & Dark Cyan */
+    color: #DAC5D1; /* Soft Lavender */
 }
 
 /* Top Bar */
@@ -13,8 +16,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background: rgba(35, 28, 90, 0.9);
-    color: white;
+    background: #EDBFC6; /* Muted Burgundy */
+    color: #DAC5D1;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +38,7 @@ body {
 .menu-icon .bar {
     width: 28px;
     height: 4px;
-    background-color: white;
+    background-color: #ffff; /* Soft Lavender */
     border-radius: 4px;
     transition: transform 0.3s;
 }
@@ -64,7 +67,7 @@ body {
 .date-time {
     font-size: 18px;
     font-family: 'Orbitron', sans-serif;
-    color: #f4c531;
+    color: #ffff;
 }
 
 /* Sidebar - Default Closed */
@@ -74,7 +77,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #111827;  
+    background: #036365;  /* Dark Cyan */
     backdrop-filter: blur(10px);
     overflow-x: hidden;
     transition: width 0.3s ease-in-out;
@@ -102,15 +105,15 @@ body {
     padding: 12px 15px;
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: #DAC5D1; /* Soft Lavender */
     display: block;
     transition: 0.3s;
     border-radius: 8px;
 }
 
 .slider-bar a:hover {
-    background: rgba(255, 215, 0, 0.2);
-    color: #f4c531;
+    background: rgba(224, 131, 156, 0.4); /* Soft Rose */
+    color: #E0839C;
 }
 
 /* Main Tracker Boxes */
@@ -137,9 +140,9 @@ body {
 
 /* Tracker Box Styling */
 .tracker {
-    background: linear-gradient(135deg, #f4c531, #d9a019);
-    color: #111;
-    padding: 20px; /* Reduce padding from 20px to 15px */
+    background: #C5F4E0; /* Muted Burgundy & Soft Rose */
+    color: #11312B; /* Deep Teal */
+    padding: 20px;/* Reduce padding from 20px to 15px */
     margin: 20px auto; /* Adds more space around the boxes */
     width: calc(30% - 30px); /* Adjust width to fit 3 per row */
     /* flex: 1 1 calc(30% - 30px);width: calc(20% - 15px);  */
@@ -156,9 +159,9 @@ body {
 }
 
 .tracker:hover {
-    background: #ffd700;
+    background: #DAC5D1; /* Soft Lavender */
     transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(255, 220, 19, 0.826);
+    box-shadow: 0px 5px 15px rgba(224, 131, 156, 0.6);
 }
 
 a{
@@ -175,21 +178,21 @@ a{
 }
 
 .circle {
-    width: 55px; /* Updated size */
+    width: 55px;
     height: 55px;
-    background-color: #ccda2bf0; /* Updated color */
+    background-color: #EDBFC6; /* Dark Cyan */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 26px; /* Updated font size */
+    color: #DAC5D1;
+    font-size: 26px;
     transition: transform 0.2s ease-in-out;
 }
 
 .circle:hover {
-    background: #ffd700;
-    color: black;
+    background: #8E5775; /* Muted Burgundy */
+    color: #E0839C;
     transform: scale(1.1);
 }
 
@@ -204,21 +207,21 @@ a{
 }
 
 .option {
-    width: 55px; /* Updated size */
+    width: 55px;
     height: 55px;
-    background-color: #222831; /* Updated color */
+    background-color: #DAC5D1; /* Soft Lavender */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 22px; /* Updated font size */
+    color: #11312B;
+    font-size: 22px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
 .option:hover {
-    background: #ffd700;
+    background: #E0839C; /* Soft Rose */
     color: black;
     transform: scale(1.1);
 }
@@ -254,4 +257,5 @@ a{
 .tracker, .circle, .option {
     animation: fadeIn 0.5s ease-in-out;
 }
+
 
